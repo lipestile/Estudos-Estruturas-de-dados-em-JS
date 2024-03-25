@@ -122,6 +122,24 @@ carro.title = 'kombi'
 console.log(carro.title);
 
 
+// Declarando uma classe(construtor) que representa um livro:
+function Carro (nome, marca, cor){
+    this.nome = nome;
+    this.marca = marca;
+    this.cor = cor;
+}
+
+// para instanciar estas classes, podemos usar o código a segguir
+
+var carro = new Carro('Fusca', 'VW', 'Preto');
+
+// Podemos declarar e usar uma função/metodo, veja:
+
+Carro.prototype.acelerar = function(){
+    console.log(this.nome);
+}
+
+carro.acelerar();
 
 
 
